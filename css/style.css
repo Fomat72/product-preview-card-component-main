@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+}
+
+.mobile {
+    display: none;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prodact {
+    width: 600px;
+    height: 450px;
+    margin: 0  auto;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+}
+
+.desktop {
+    border-radius: 10px 0 0 10px;
+    display: flex;
+}
+
+.description {
+    width: 230px;
+    text-align: left;
+    margin: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    width: 230px;
+    height: 50px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: hsl(159, 90%, 12%);
+}
+
+.perfume, h1, p {
+    margin: 10px 0;
+}
+
+.perfume {
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+h1  { 
+    line-height: 30px;
+    font-family: 'Fraunces', serif;
+}
+
+.description-perfume {
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.list-cost {
+    margin: 10px 0 20px ;
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    
+}
+
+.cost {
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    color:hsl(158, 36%, 37%);
+}
+
+p>s {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+}
+
+@media (max-width: 375px) {
+    
+    .prodact {
+        width: 340px;
+        height: 610px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile{
+        width: 340px;
+        margin: 0 auto;
+        border-radius: 10px 10px 0 0;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .description {
+        width: 292px;
+        height: 350px;
+        text-align: left;
+        margin: 20px 50px 20px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .perfume, h1, p {
+        margin: 5px 0;
+    }
+     
+    .description-perfume {
+        line-height: 22px;
+        font-family: 'Montserrat', sans-serif;
+        color: hsl(228, 12%, 48%);
+    }
+    
+    a {
+        width: 292px;
+    }
+}
